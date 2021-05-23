@@ -27,7 +27,7 @@ public class Player {
 	}
 	
 	public void load() {
-		ImageIcon referencia = new ImageIcon("res\\lixoECOLOGICO2.png");
+		ImageIcon referencia = new ImageIcon("res\\lixoPapelp.png");
 		imagem = referencia.getImage();
 		altura = imagem.getHeight(null);
 		largura = imagem.getWidth(null);
@@ -72,6 +72,7 @@ public class Player {
 			dx=7;
 		}
 		
+		
 	}
 	
 	public void	keyRelease(KeyEvent tecla) {
@@ -95,6 +96,7 @@ public class Player {
 	
 	
 	}
+	
 
 	
 	

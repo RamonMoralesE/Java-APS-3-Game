@@ -46,7 +46,7 @@ public class Fase extends JPanel implements ActionListener {
 	}
 
 	public void inicializaLixos() {
-		int coordenadas[] = new int[10];
+		int coordenadas[] = new int[8];
 		lixo1 = new ArrayList<Lixo1>();
 
 		for (int i = 0; i < coordenadas.length; i++) {
@@ -58,11 +58,11 @@ public class Fase extends JPanel implements ActionListener {
 	}
 	
 	public void inicializaPapel() {
-		int coordenadas[] = new int[25];
+		int coordenadas[] = new int[20];
 		papel = new ArrayList<Papel>();
 		
 		for (int i = 0; i < coordenadas.length; i++) {
-			int x = (int) (Math.random() * 1024 + 10);
+			int x = (int) (Math.random() * 1024 + -40);
 			int y = (int) (Math.random() * 768 - 1500);
 			papel.add(new Papel(x, y));
 			
@@ -188,5 +188,7 @@ public class Fase extends JPanel implements ActionListener {
 			player.keyRelease(e);
 		}
 	}
+	
+	
 
 }
