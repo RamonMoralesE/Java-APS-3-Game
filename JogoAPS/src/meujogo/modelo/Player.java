@@ -34,7 +34,17 @@ public class Player {
 	}
 	
 	public void update() {
-		x += dx;
+            if (dx > 0) {
+                if (x<944) {
+                    x += dx;
+                }
+            } else {
+                if (x > 0) {
+                    x += dx;
+                }
+                
+            }
+		
 		y += dy;
 	}
 	
