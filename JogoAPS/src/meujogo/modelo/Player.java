@@ -44,8 +44,14 @@ public class Player {
                 }
                 
             }
-            if (true) {
-                y += dy;
+            if (dy > 0) {
+                if (y < 578){
+                    y += dy;
+                }
+            }else{
+                if(y > 0){
+                    y += dy;
+                }
             }
 		
 	}
