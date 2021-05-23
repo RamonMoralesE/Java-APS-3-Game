@@ -44,8 +44,10 @@ public class Player {
                 }
                 
             }
+            if (true) {
+                y += dy;
+            }
 		
-		y += dy;
 	}
 	
 	
