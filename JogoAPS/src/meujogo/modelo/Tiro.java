@@ -29,8 +29,8 @@ public class Tiro {
 	}
 
 	public void update() {
-		this.x += VELOCIDADE;
-		if (this.x > LARGURA) {
+		this.y -= VELOCIDADE;
+		if (this.y > LARGURA) {
 			isVisivel = false;
 		}
 	}
