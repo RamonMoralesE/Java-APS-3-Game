@@ -1,6 +1,8 @@
 package meujogo.modelo;
 
 import java.awt.Graphics;
+import java.awt.Font;
+import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Rectangle;
@@ -97,6 +99,11 @@ public class Fase extends JPanel implements ActionListener {
 				in.load();
 				graficos.drawImage(in.getImagem(), in.getX(), in.getY(), this);
 			}
+
+			Font font = new Font("Arial", Font.PLAIN, 25);
+			graficos.setColor(Color.RED);
+			graficos.setFont(font);
+			graficos.drawString("Faltam: " + papel.size(), 850, 25);
 
 		}else {
 			ImageIcon fimJogo = new ImageIcon("res\\FIM DE JOGO.jpg");
