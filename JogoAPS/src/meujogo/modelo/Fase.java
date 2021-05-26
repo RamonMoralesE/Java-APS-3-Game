@@ -11,7 +11,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import javax.swing.ImageIcon;
@@ -190,9 +189,20 @@ public class Fase extends JPanel implements ActionListener {
 			player.keyPressed(e);
 		}
 
-		@Override
 		public void keyReleased(KeyEvent e) {
 			player.keyRelease(e);
+                        if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                        if (emJogo == false) {
+                            emJogo = true;
+                            player.setVisivel(false);
+                            player.load();
+                            inicializaLixos();
+                            inicializaPapel();
+                            }
+                        }
+                        if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+                            emJogo = false;
+                        }
 		}
 	}
 	
